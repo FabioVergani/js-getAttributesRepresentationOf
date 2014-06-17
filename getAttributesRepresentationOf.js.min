@@ -1,0 +1,5 @@
+function getAttributesRepresentationOf(x){
+  var i,o=null,p='attributes';
+  if(x&&(p=x[p])&&(i=p.length)){o=Object.create(null);while(i--){x=p[i];o[x.name]=x.value}};
+  return o
+};
